@@ -1,9 +1,100 @@
-.nav_bar{
-    background-color: #0C79B8;
+.nav_bar {
+    /* position: fixed; */
+    background-color: #011E2E;
     height: 80px;
-    padding: 17px 17px 16px 44px;
+    padding: 17px 44px;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
 }
-mobile_nav_bar{
-    background-color: #0C79B8;
+
+.mobile_nav_bar {
+    background-color: #011E2E;
+    /* Same as desktop background */
+    width: 100%;
+    /* Full-width */
+    padding: 20px 0;
+    /* Adjust padding */
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    position: absolute;
+    /* Overlay on top of content */
+    top: 80px;
+    /* Below navbar */
+}
+
+.nav_link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: right;
+    font-family: "PP Mori";
+    font-style: normal;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.nav_link:hover {
+    color: #4FB6F1;
+    /* Light blue */
+    transform: scale(1.1);
+}
+
+.nav_button {
+    background-color: white;
+    color: #011E2E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav_button:hover {
+    background-color: #4FB6F1;
+    color: white;
+    transform: scale(1.05);
+}
+
+.mobile_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    color: #FFF;
+
+    text-align: right;
+    font-family: "PP Mori";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+.mobile_link:hover {
+    color: #4FB6F1;
+    transform: scale(1.1);
+}
+
+.mobile_button {
+    background-color: white;
+    color: #011E2E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.mobile_button:hover {
+    background-color: #4FB6F1;
+    color: white;
+    transform: scale(1.05);
 }

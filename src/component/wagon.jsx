@@ -22,7 +22,7 @@ const Wagon = ({ imageUrl, title, subtitle, animationProps }) => {
         {/* Content Section */}
         <div className="content">
           <div className="content-text">
-            <div className="svg-container">
+            <div className="svg-container2">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 81 100" fill="none">
                 <g style={{ mixBlendMode: "soft-light" }}>
                   <path d="M80.5 0L14.5426 100H0.5L65.8192 0H80.5Z" fill="#F4F5F6" fillOpacity="0.1" />

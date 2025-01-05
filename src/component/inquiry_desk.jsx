@@ -25,7 +25,7 @@ const FAQSection = () => {
     };
 
     return (
-        <div className="w-full pt-2 p-12">
+        <div className="w-full pt-2 p-12 ">
             {faqs.map((faq, index) => (
                 <div
                     key={index}

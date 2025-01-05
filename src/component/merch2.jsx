@@ -25,7 +25,6 @@ const TShirtAdvert = () => {
 
   return (
     <div className="flex flex-col md:flex-row items-center border-2 border-blue-500 rounded-lg shadow-lg mx-auto mt-4 max-w-6xl">
-      {/* 3D Model Section */}
       <div className="flex-1 flex justify-center items-center">
         {isMobile ? (
           <div className="text-center p-4">
@@ -35,8 +34,8 @@ const TShirtAdvert = () => {
           </div>
         ) : (
           <div
-            className="w-full h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[80vh]"
-            style={{ minHeight: "300px" }} // Ensures visibility on very small screens
+            className="w-full h-[18vh] sm:h-[18vh] md:h-[18vh] lg:h-[76vh]"
+            style={{ minHeight: "200px" }} // Ensures visibility on very small screens
           >
             <Canvas
               camera={{
@@ -72,7 +71,7 @@ const TShirtAdvert = () => {
         </h2>
         <button
           className="gap-2 text-white font-bold py-3 px-6 rounded-lg transform hover:bg-blue-600 transition-all flex items-center"
-          onClick={() => alert("Redirecting to purchase page!")}
+          onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdILChTCM5I0G5QbkwEM4iuEZUNohFfprpD-f8olae83sbjpw/viewform', '_blank')}
           style={{ backgroundColor: "var(--Udgam-Blue, #225088)", borderRadius: "12px", color: "var(--Udgam-White, #F4F5F6)", leadingTrim: "both", textEdge: "cap", fontFamily: "PP Mori", fontSize: "30px", fontStyle: "normal", fontWeight: "600", lineHeight: "normal", textTransform: "capitalize" }}
         >
           BUY NOW

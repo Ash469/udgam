@@ -10,7 +10,7 @@ import LinkedIn from "../assets/linkedin.svg";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer mt-10">
             <div className="footer-section">
                 <div className="flex justify-center items-center gap-8">
                 <img src={UdgamLogo} alt="Udgam Logo" className="udgam-logo" /> 

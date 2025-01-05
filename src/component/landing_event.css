@@ -3,13 +3,11 @@
     margin-right: 5%;
 }
 
-.event-description-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 0.5rem;
+@media (max-width: 1024px) {
+    .events-list {
+        margin-left: 5%;
+        margin-right: 2.5%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -45,36 +43,25 @@
     }
 }
 
-.event-card:nth-child(1) {
-    background-color: rgb(4, 84, 83);
-}
-
-.event-card:nth-child(2) {
-    background-color: rgb(247, 189, 64);
-}
-
-.event-card:nth-child(3) {
-    background-color: rgb(65, 98, 184);
-}
-
+/* Specific styling for event description text */
 .event-card:nth-child(1) .event-description-text {
+    color: #F3E8BB;
     background-color: rgb(95, 159, 158);
     border-radius: 0.5rem;
-    border: 0.125rem solid #0C0C0C;
+    border: 0.125rem solid #F3E8BB;
     padding: 1rem;
 }
 
 .event-card:nth-child(1) .event-description-text h1 {
-    color: #F3E8BB;
-    font-family: "TT Firs Neue Trl", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
+    font-family: "TT Firs Neue Trl";
+    font-size: 21.831px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+    line-height: normal;
 }
 
 .event-card:nth-child(1) .event-description-text p {
-    color: #F3E8BB;
     text-align: justify;
     font-family: "PP Mori", sans-serif;
     font-size: 1rem;
@@ -83,14 +70,14 @@
 }
 
 .events-list .event-card:nth-child(2) .event-description-text {
+    color: #BD4135;
     background-color: rgb(252, 241, 211);
     border-radius: 0.5rem;
-    border: 0.125rem solid #0C0C0C;
+    border: 2px solid #D6537A;
     padding: 1rem;
 }
 
 .events-list .event-card:nth-child(2) .event-description-text h1 {
-    color: #1447C4;
     font-family: "TT Firs Neue Trl", sans-serif;
     font-size: 1.25rem;
     font-weight: 800;
@@ -99,7 +86,6 @@
 }
 
 .events-list .event-card:nth-child(2) .event-description-text p {
-    color: #1447C4;
     text-align: justify;
     font-family: "PP Mori", sans-serif;
     font-size: 1rem;
@@ -125,6 +111,7 @@
 
 .events-list .event-card:nth-child(3) .event-description-text p {
     color: #0C0C0C;
+    text-align: justify;
     font-family: "PP Mori", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -140,3 +127,49 @@
     line-height: normal;
     text-transform: capitalize;
 }
+
+/* Image Container Styles */
+.image-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Text Container Styles */
+.landing-event-text-container {
+    border-radius: 10px;
+    border: 2px solid #0C0C0C;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.landing-event-text-container h1 {
+    font-family: "TT Firs Neue Trl";
+    font-size: 21.831px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.landing-event-text-container p {
+    text-align: left;
+}
+
+.image-container {
+    position: relative; /* to position the button inside the container */
+  }
+  
+  .register-btn {
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.3s ease-in-out; /* smooth transition */
+  }
+  
+  .image-container:hover .register-btn {
+    opacity: 1; /* make the button visible on hover */
+  }

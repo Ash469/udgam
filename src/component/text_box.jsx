@@ -4,7 +4,7 @@ import './text_box.css';
 
 const TextBox = ({ title, style }) => {
     return (
-        <div className={`flex items-center mt-4 mb-4 ${style?.transform}`} style={{ ...style }}>
+        <div className={`flex items-center mt-4 mb-4  ${style?.transform}`} style={{ ...style }}>
             <div className="min-w-[80px]">
                 <img src={stand} alt="" className="w-full max-w-[600px]" />
             </div>

@@ -5,6 +5,8 @@ import { FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa"; // Icons for d
 import { TeamData } from "./data"; // Import data
 import NavBar from "./nav_bar";
 import Footer from "./footer";
+import { motion } from "framer-motion";
+
 
 // Individual Card Component
 const Card = ({ name, mobile, email, linkdn }) => {
@@ -52,7 +54,7 @@ const TeamCards = () => {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col items-center p-5">
+      {/* <div className="flex flex-col items-center p-5">
         {TeamData.map((team, teamIndex) => (
           <div key={teamIndex} className="mb-12 text-center w-full">
             <h2
@@ -77,7 +79,25 @@ const TeamCards = () => {
             </div>
           </div>
         ))}
+      </div> */}
+         <main className="flex-grow mt-20">
+       <motion.div
+      className="coming-soon-container flex justify-center items-center"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="coming-soon-content"    style={{ background: "linear-gradient(135deg, #0c79b8, #1c1f26)" }}>
+        <h1 >Coming Soon</h1>
+        <p>We're working hard to bring something amazing. Stay tuned!</p>
+        <div className="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+    </motion.div>
+    </main>
       <Footer />
     </>
   );

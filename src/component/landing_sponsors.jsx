@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import "./landing_sponsors.css";
 
 const sponsors = [
@@ -25,7 +26,7 @@ const sponsors = [
 const LandingSponsors = () => {
     return (
         <>
-    <div className="sponsors-container">
+    {/* <div className="sponsors-container mt-28">
       {sponsors.map((sponsor) => (
         <a
           href={sponsor.link}
@@ -47,7 +48,23 @@ const LandingSponsors = () => {
               <path d="M19.4484 13.0523V10.9849L13.4137 5.05859L10.4638 5.05859L16.4435 10.9849H4.56836V13.0523H16.4837L10.504 18.9786H13.4542L19.4484 13.0523Z" fill="white" />
           </svg>
       </a>
-  </div>
+  </div> */}
+  <motion.div
+      className="coming-soon-container flex justify-center items-center"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="coming-soon-content"    style={{ background: "linear-gradient(135deg, #0c79b8, #1c1f26)" }}>
+        <h1 >Coming Soon</h1>
+        <p>We're working hard to bring something amazing. Stay tuned!</p>
+        <div className="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </motion.div>
   </>
 
     );

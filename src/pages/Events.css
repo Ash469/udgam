@@ -1,0 +1,92 @@
+
+body{
+    background-color: #e4e4e4;
+    padding: 0%;
+    margin: 0%;
+}
+.eventname{
+    padding: 0%;
+    margin: 0%;
+}
+.timeline-container {
+    position: fixed; 
+    top: 50%; 
+    left: 90px; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    z-index: 0;
+  }
+  
+  .timeline {
+    position: relative;
+    width: 8px;
+    background-color: white; 
+    height: 100vh; 
+  }
+  
+  .pointer {
+    position: relative;
+    top: 25%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  
+  .pointer::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    width: 20px;
+    height: 20px;
+    background-color: #222222; 
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .pointer.active::before {
+    background-color:aliceblue; 
+    border: 7px solid black;
+    position: absolute;
+    left: -12px;
+
+  }
+  
+  .pointer span {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
+  @media(max-width:600px){
+    .timeline-container {
+      left: 10px; 
+      width: 50px;
+    }
+    
+    .timeline {
+      width: 5px;
+    }
+    .pointer::before {
+      position: absolute;
+      left: -5px;
+      width: 15px;
+      height: 15px;
+    }
+    
+    .pointer.active::before {
+      border: 5px solid black;
+      position: absolute;
+      left: -10px;
+  
+    }
+
+    .pointer span {
+      font-size: 8px;
+    }
+  }
+  

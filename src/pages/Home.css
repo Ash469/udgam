@@ -1,0 +1,59 @@
+.App {
+    position: relative;
+    /* z-index: 0; */
+  }
+
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensures it is above the SVG background */
+    padding: 20px;
+  }
+  
+  .red-dot {
+    position: absolute;
+    z-index: 1; /* Ensure it's visible over the background */
+  }
+  .svg-overlay {
+    position: absolute;
+    top: calc(110vh); /* Default top for large screens */
+    left: 0;
+    width: 100%; /* Full width of the viewport */
+    height: calc(560vh); /* Default height for large screens */
+    z-index: -1; /* Place SVG in the background */
+    overflow: hidden; /* Prevent any overflow */
+  }
+  
+  .responsive-svg {
+    width: 100%; /* Make the SVG responsive */
+  }
+  
+  /* Media Queries for Responsive Adjustments */
+  @media (max-width: 1440px) {
+    .svg-overlay {
+      top: calc(100vh);
+      height: calc(820vh);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .svg-overlay {
+      top: calc(100vh); /* Adjust top for standard laptops */
+      height: calc(850vh); /* Adjust height proportionally */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .svg-overlay {
+      top: calc(100vh);
+      height: calc(900vh);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .svg-overlay {
+      top: calc(100vh); /* Adjust top for mobile devices */
+      height: calc(1350vh); /* Further increase height for very small devices */
+    }
+  }
+  

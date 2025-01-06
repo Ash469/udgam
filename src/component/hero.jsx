@@ -18,7 +18,7 @@ function Start() {
       if (videoRef.current) {
         videoRef.current.play()
       }
-    }, 3000) // Match with the duration of the logo animation
+    }, 2000) // Match with the duration of the logo animation
 
     return () => {
       clearTimeout(animationTimer)

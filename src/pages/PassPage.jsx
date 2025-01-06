@@ -13,7 +13,7 @@ function PassPage() {
       <NavBar />
       <Intro />
       <BuyCard />
-        <Footer />
+      <Footer />
 
       </div>
       <div className='bg'>

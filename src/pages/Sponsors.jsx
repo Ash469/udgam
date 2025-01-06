@@ -15,7 +15,7 @@ const Sponsors = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="coming-soon-content"    style={{ background: "linear-gradient(135deg, #0c79b8, #1c1f26)" }}>
+      <div className="coming-soon-content"   style={{ background: "linear-gradient(135deg, #0c79b8,rgba(65, 82, 122, 0.53))" }}>
         <h1 >Coming Soon</h1>
         <p>We're working hard to bring something amazing. Stay tuned!</p>
         <div className="loader">

@@ -1,0 +1,20 @@
+.card{
+    position: relative;
+    top: -75px;
+    width: 100%;
+    z-index: 100;
+}
+.quote{
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+@media(max-width:560px){
+    .card img{
+        width: 100%;
+    }
+    .quote{
+        font-size: 16px;
+    }
+}

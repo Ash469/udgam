@@ -4,7 +4,7 @@ import photo2 from '../assets/Subtract.png'
 
 function BuyCard() {
     return (
-        <div className='BuyCard'>
+        <div className='BuyCard '>
             <div className="ticket">
                 <div className="ticket-content">
                     <div className="ticket-header">
@@ -20,7 +20,7 @@ function BuyCard() {
                     <div className="ticket-details">
                         <div className="price">
                             <span>Price</span>
-                            <h2>$200</h2>
+                            <h2>Rs 200</h2>
                         </div>
                         <div className="date">
                             <span>Date</span>

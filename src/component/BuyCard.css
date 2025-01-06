@@ -1,11 +1,14 @@
 .BuyCard {
     display: flex;
     justify-content: center;
-    margin: 0% 5% 10% 5%;
-    padding: 0px 10%;
-    align-items: center;
-    font-size: 1.5rem;
+    align-items: center; /* Keeps the content centered vertically */
+    margin: -5% 5% 10% 5%; /* Adjusted negative top margin to pull up */
+    padding: 0 10%; /* Simplified padding values */
+    font-size: 1.5rem; /* Adjust this value if text needs to be larger/smaller */
 }
+
+    
+
 
 .BuyCard .ticket {
     display: flex;

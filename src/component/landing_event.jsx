@@ -24,19 +24,18 @@ const landing_events = [
 
 const LandingEvents = () => {
     return (
-        <div className="events-list">
+        <div className="events-list px-4">
             {landing_events.map((event, index) => (
                 <div
                     key={index}
-                    className={`event-card flex flex-col md:flex-row gap-2 m-4 rounded-lg shadow-lg`}
-                    style={{height:'250px'}}
+                    className={`event-card flex flex-col md:flex-row gap-4 m-4 rounded-lg shadow-lg`}
                 >
                     {/* Image Section */}
                     <div className="image-container w-full md:w-1/3 relative rounded-lg overflow-hidden">
                         <img
                             src={event.imageUrl}
                             alt={event.name}
-                            className="w-full h-full object-cover rounded-lg shadow-lg"
+                            className="w-full h-64 md:h-full object-cover rounded-lg shadow-lg"
                         />
                         <button className="register-btn absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white py-2 px-4 rounded-lg opacity-0 transition-opacity duration-300"
                         onClick={() => window.open('https://unstop.com/p/intern-fair-your-gateway-to-internships-iit-guwahati-1331100', '_blank')}>
@@ -46,16 +45,16 @@ const LandingEvents = () => {
 
                     {/* Text Section with dynamic background color */}
                     <div className={`landing-event-text-container w-full md:w-2/3 flex flex-col justify-center p-4 ${index === 0 ? 'bg-teal-800' : index === 1 ? 'bg-yellow-400' : 'bg-blue-600'}`}>
-                        <div className="event-description-text">
-                            <h1 className="text-xl font-semibold">{event.name}</h1>
-                            <p className="text-sm">{event.description}</p>
+                        <div className="event-description-text text-white">
+                            <h1 className="text-xl md:text-2xl font-semibold">{event.name}</h1>
+                            <p className="text-sm md:text-base mt-2">{event.description}</p>
                         </div>
                     </div>
                 </div>
             ))}
 
             {/* View More Link */}
-            <div className="events-svg flex justify-end items-center pr-16">
+            <div className="events-svg flex justify-end items-center pr-4 md:pr-16">
                 <a href="/events" className="flex items-center hover:underline group">
                     View More
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="ml-1 transform transition-transform group-hover:translate-x-2">

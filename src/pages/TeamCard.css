@@ -1,0 +1,291 @@
+/* General container styling for the cards */
+.team-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap between cards */
+    padding: 20px; /* Increased padding around container */
+    min-height: 100vh;
+}
+
+.team-page-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-page-title h1 {
+    color: #9779f5;
+    font-family: Grtsk, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 42.5px;
+    margin-top: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .team-page-title h1 {
+        font-size: 40px;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .team-page-title h1 {
+        font-size: 30px;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Individual card styling */
+.team-card {
+    width: 280px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.086);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    margin: 10px; /* Added margin around cards */
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow on hover for brightness */
+}
+  
+/* Styling for the front and back of the card */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-blend-mode: overlay;
+}
+  
+.card-front {
+    background-color: rgba(0, 0, 0, 0.4); /* Made background slightly lighter */
+    backdrop-filter: blur(2px);
+}
+  
+.card-back {
+    background-color: rgba(0, 0, 0, 0.6); /* Made background slightly lighter */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+  
+/* Card hover effect */
+.team-card:hover .card-front {
+    transform: rotateY(180deg);
+}
+  
+.team-card:hover .card-back {
+    transform: rotateY(360deg);
+}
+
+
+/* Styling for text on the cards */
+.member-name {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 900; /* Changed to bold for a bolder look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Made text shadow lighter */
+    letter-spacing: 1px;
+    color: #149fd1;
+    text-transform: uppercase;
+}
+  
+.member-team{
+    margin: 10px 0;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Made text shadow lighter */
+    opacity: 0.95;
+    font-weight: 600;
+    color: #f0f0f0;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(0, 172, 237, 0.3); /* Increased background opacity for brightness */
+    backdrop-filter: blur(5px);
+}
+
+/* Icon styling */
+
+.social-icon {
+    font-size: 1.9rem;
+    margin-right: 0;
+    transition: all 0.3s ease;
+    color: #149fd1;
+    font-weight: 1000;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-icon:hover {
+    color: #149fd1;
+    transform: scale(1.5);
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));
+}
+  
+/* LinkedIn link styling */
+.card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-back .links-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-back a {
+    color: #00aced;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+.card-back a:hover {
+    background-color: #00aced;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-back a:hover .social-icon {
+    color: white;
+}
+  
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .team-card {
+        width: 240px;
+        height: 300px;
+        margin: 5px; /* Reduced margin for mobile */
+    }
+  
+    .member-name {
+        font-size: 1.2rem;
+    }
+  
+    .member-team {
+        font-size: 0.9rem;
+    }
+
+    .contact-icon {
+        font-size: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+    }
+
+    .card-back a {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+}
+.managers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+}
+.module-section {
+    width: 280px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.086);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    margin: 10px; /* Added margin around cards */
+}
+
+.module-front, .module-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-blend-mode: overlay;
+}
+
+.module-front {
+    background-color: rgba(0, 0, 0, 0.4); /* Made background slightly lighter */
+    backdrop-filter: blur(2px);
+}
+  
+.module-back {
+    background-color: rgba(0, 0, 0, 0.6); /* Made background slightly lighter */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+  
+/* Card hover effect */
+.module-section:hover .module-front {
+    transform: rotateY(180deg);
+}
+  
+.module-section:hover .module-back {
+    transform: rotateY(360deg);
+}
+
+.module-section {
+    width: 280px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.086);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    margin: 10px; /* Added margin around cards */
+}
+
+.module-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow on hover for brightness */
+}

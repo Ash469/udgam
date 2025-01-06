@@ -28,7 +28,8 @@ const LandingEvents = () => {
             {landing_events.map((event, index) => (
                 <div
                     key={index}
-                    className={`event-card flex flex-col md:flex-row gap-4 m-4 rounded-lg shadow-lg`}
+                    className={`event-card flex flex-col md:flex-row gap-2 m-4 rounded-lg shadow-lg`}
+                    style={{height:'250px'}}
                 >
                     {/* Image Section */}
                     <div className="image-container w-full md:w-1/3 relative rounded-lg overflow-hidden">
@@ -37,7 +38,8 @@ const LandingEvents = () => {
                             alt={event.name}
                             className="w-full h-full object-cover rounded-lg shadow-lg"
                         />
-                        <button className="register-btn absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white py-2 px-4 rounded-lg opacity-0 transition-opacity duration-300">
+                        <button className="register-btn absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white py-2 px-4 rounded-lg opacity-0 transition-opacity duration-300"
+                        onClick={() => window.open('https://unstop.com/p/intern-fair-your-gateway-to-internships-iit-guwahati-1331100', '_blank')}>
                             Register Now
                         </button>
                     </div>

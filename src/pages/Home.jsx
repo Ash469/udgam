@@ -104,22 +104,23 @@ function Home() {
     };
   }, []);
 
-  
+
   return (
     <div className="App">
       {/* <div
         className="svg-overlay">
         <svg
-         className="responsive-svg"
+          className="responsive-svg"
           width="100%"
           height="auto"
           viewBox="0 0 1288 6459"
-        preserveAspectRatio="none"
-        fill="none"
+          preserveAspectRatio="none"
+          fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path className="motionPath" opacity="0.15" d="M1265 232V78.5C1265 76.2909 1263.21 74.5 1261 74.5H72.8594C70.6502 74.5 68.8594 72.7091 68.8594 70.5V0" stroke="#F4F5F6" stroke-width="10" />
-          <path className="motionPath"opacity="0.15" d="M1265 188V1160C1265 1162.21 1263.21 1164 1261 1164H1071.5" stroke="#222222" stroke-width="10"/>
+          
+          <path className="motionPath" opacity="0.15" d="M1265 232V78.5C1265 76.2909 1263.21 74.5 1261 74.5H72.8594C70.6502 74.5 68.8594 72.7091 68.8594 70.5V0" stroke="#22222" stroke-width="10" />
+          <path className="motionPath" opacity="0.15" d="M1265 188V1160C1265 1162.21 1263.21 1164 1261 1164H1071.5" stroke="#222222" stroke-width="10" />
           <path className="motionPath" opacity="0.15" d="M1265 2607V2553.5C1265 2551.29 1263.21 2549.5 1261 2549.5H93.5479C91.3388 2549.5 89.5479 2547.71 89.5479 2545.5V1168C89.5479 1165.79 91.3388 1164 93.5479 1164H1071.5" stroke="#222222" stroke-width="10" />
           <path className="motionPath" opacity="0.15" d="M1265 2603V3657" stroke="#222222" stroke-width="10" />
           <path className="motionPath" opacity="0.15" d="M1265 3657V3715C1265 3717.21 1263.21 3719 1261 3719H92.2153C90.6001 3719 89.1435 3719.97 88.5226 3721.46L40.3073 3837.26C40.1044 3837.75 40 3838.27 40 3838.8V4002" stroke="#222222" stroke-width="10" />
@@ -159,26 +160,26 @@ function Home() {
       </div> */}
 
 
-        <NavBar />
-        <Start />
-        <TextBox title={"What is Udgam?"} style={{ paddingTop: '10px' }} />
-        <WhatIsUdgam />
-        <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)' }} />
-        <LandingEvents />
-        <TextBox title={"Merch Stations"} />
-        <TShirtAdvert />
-        {/* <Merch /> */}
-        <TextBox title={"Speakers Express"} style={{ transform: 'rotate(180deg)' }} />
-        <Speakers />
-        <div style={{ height: '40px' }}></div>
-        <TextBox title={"Our Sponsors"} />
-        <LandingSponsors />
-        {/* <TextBox title={"Inquiry Station"} style={{ transform: 'rotate(180deg)' }} />
+      <NavBar />
+      <Start />
+      <TextBox title={"What is Udgam?"} style={{ paddingTop: '10px' }} />
+      <WhatIsUdgam />
+      <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)' }} />
+      <LandingEvents />
+      <TextBox title={"Merch Stations"} />
+      <TShirtAdvert />
+      {/* <Merch /> */}
+      <TextBox title={"Speakers Express"} style={{ transform: 'rotate(180deg)' }} />
+      <Speakers />
+      <div style={{ height: '40px' }}></div>
+      <TextBox title={"Our Sponsors"} />
+      <LandingSponsors />
+      {/* <TextBox title={"Inquiry Station"} style={{ transform: 'rotate(180deg)' }} />
         <FAQSection /> */}
-        <Footer />
-      </div>
-      );
+      <Footer />
+    </div>
+  );
 }
 
-      export default Home;
+export default Home;
 

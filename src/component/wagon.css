@@ -29,57 +29,63 @@
   height: 181px;
   border-radius: 7.417px 7.417px 0px 0px;
   border: 6px solid var(--Udgam-Black, #fdfafa);
-  background: var(--Udgam-White, #F4F5F6);
+  background: var(--Udgam-White, #283138);
   background-size: cover;
   background-position: center;
   z-index: 2;
 }
 
 /* Content Section */
-.content {
+.speaker-content {
   position: absolute;
   top: 18px;
   left: 202px;
   width: 184px;
   height: 108px;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
   border-radius: 7.417px;
   border: 6px solid var(--Udgam-Black, #faf4f4);
   background: var(--Udgam-White, rgb(34, 34, 34));
   z-index: 2;
 }
 
-.content-text {
-  margin: 4px;
-  padding: 8px;
+.speaker-content-text {
   color: var(--Udgam-Black, #f9f3f3);
-  text-align: left;
-  position: relative;
-  font-family: "PP Mori";
+  text-align: center; /* Center text */
+  font-family: "PP Mori", sans-serif;
   font-style: normal;
-  position: relative;
   z-index: 2;
 }
 
-.content-text h1 {
+.speaker-content-text h1 {
+  color: var(--Udgam-White, #F4F5F6);
+  font-family: "PP Mori", sans-serif;
   font-size: 22.25px;
-  font-weight: 800;
-  line-height: 82%;
+  font-weight: 600;
+  line-height: 82%; /* 18.245px */
   letter-spacing: -0.445px;
+  margin: 0; /* Remove default margin */
 }
 
-.content-text p {
+.speaker-content-text p {
+  color: var(--Udgam-White, #F4F5F6);
+  font-family: "PP Mori", sans-serif;
   font-size: 14.833px;
   font-weight: 400;
-  line-height: 200%;
+  line-height: 140%; /* 20.767px */
   letter-spacing: -0.297px;
-
+  margin: 0; /* Remove default margin */
 }
+
 
 /* Fixed SVG positioning */
 .svg-container2 {
   position: absolute;
-  top: -20px;
-  left: -20px;
+  top: -4px;
+  left: 6px;
   width: 100%;
   height: 100%;
   z-index: 1;

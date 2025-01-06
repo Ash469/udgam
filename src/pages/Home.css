@@ -16,10 +16,10 @@
   }
   .svg-overlay {
     position: absolute;
-    top: calc(110vh); /* Default top for large screens */
+    top: calc(105vh);
     left: 0;
     width: 100%; /* Full width of the viewport */
-    height: calc(560vh); /* Default height for large screens */
+    height: calc(535vh); /* Default height for large screens */
     z-index: -1; /* Place SVG in the background */
     overflow: hidden; /* Prevent any overflow */
   }

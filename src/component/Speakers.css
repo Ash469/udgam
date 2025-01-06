@@ -9,10 +9,10 @@ body {
 
 }
 .train-container {
-  animation: slide1 35s linear infinite;
+  animation: slide1 45s linear infinite;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   width: 7680px;
 }
@@ -23,7 +23,7 @@ body {
     transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-3245px); 
+    transform: translateX(-6000px); 
   }
 }
   

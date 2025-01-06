@@ -1,103 +1,71 @@
-import React, { useEffect } from "react";
-import AOS from "aos"; // For scroll animations
-import "aos/dist/aos.css"; // AOS styles
-import { FaPhone, FaEnvelope, FaLinkedin } from "react-icons/fa"; // Icons for details
-import { TeamData } from "./data"; // Import data
-import NavBar from "./nav_bar";
-import Footer from "./footer";
-import { motion } from "framer-motion";
+import React from 'react';
+import './TeamCard.css';
+import { TeamData, Mangers } from './data';
+import { FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import NavBar from './nav_bar';
+import Footer from './footer';
 
 
-// Individual Card Component
-const Card = ({ name, mobile, email, linkdn }) => {
-  return (
-    <div
-      className="border border-gray-300 rounded-lg p-5 m-2 bg-white shadow-md text-center max-w-xs transform transition duration-300 hover:scale-105 hover:shadow-lg"
-      data-aos="fade-up"
-    >
-      <h3 className="text-lg font-semibold mb-2">{name}</h3>
-      <p className="flex items-center justify-center mb-2">
-        <FaPhone className="mr-2 text-green-500" />
-        {mobile}
-      </p>
-      <p className="flex items-center justify-center mb-2">
-        <FaEnvelope className="mr-2 text-blue-500" />
-        <a href={`mailto:${email}`} className="text-blue-500 hover:underline">
-          {email}
-        </a>
-      </p>
-      <p className="flex items-center justify-center">
-        <FaLinkedin className="mr-2 text-blue-700" />
-        <a
-          href={linkdn}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-700 hover:underline"
-        >
-          View Profile
-        </a>
-      </p>
-    </div>
-  );
-};
-
-// Main TeamCards Component
 const TeamCards = () => {
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in ms
-      offset: 50, // Offset from the viewport (in px)
-    });
-  }, []);
-
+  const groupedManagers = Mangers.reduce((acc, manager) => {
+    const { team } = manager;
+    if (!acc[team]) acc[team] = [];
+    acc[team].push(manager);
+    return acc;
+  }, {});
   return (
     <>
       <NavBar />
-      {/* <div className="flex flex-col items-center p-5">
-        {TeamData.map((team, teamIndex) => (
-          <div key={teamIndex} className="mb-12 text-center w-full">
-            <h2
-              className="text-2xl font-bold mb-6 text-gray-800 uppercase"
-              data-aos="fade-right"
-            >
-              {team.teamName}
-            </h2>
-            <div
-              className="flex flex-wrap justify-center gap-8"
-              data-aos="fade-up"
-            >
-              {team.members.map((member, index) => (
-                <Card
-                  key={index}
-                  name={member.name}
-                  mobile={member.mobile}
-                  email={member.email}
-                  linkdn={member.linkdn}
-                />
-              ))}
+      <div className="team-page-title">
+        <h1 className="team-heading">MEET OUR TEAM</h1>
+      </div>
+      <div className="team-cards-container">
+        {TeamData.map((member, index) => (
+          <div key={index} className="team-card">
+            <div className="card-front">
+              <h2 className="member-name" style={{ fontSize: '1rem', fontWeight: '900', color: '#ffff' }}>{member.name}</h2>
+              <p className='member-team'>{member.team}</p>
+            </div>
+            <div className="card-back">
+              <div className="links-container">
+                <a href={`tel:${member.mobile}`} target="_blank" rel="noopener noreferrer">
+                  <FaPhone className="social-icon" />
+                </a>
+                <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
+                  <FaEnvelope className="social-icon" />
+                </a>
+                <a href={member.linkdn} target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin className="social-icon" />
+                </a>
+              </div>
             </div>
           </div>
         ))}
-      </div> */}
-         <main className="flex-grow mt-20">
-       <motion.div
-      className="coming-soon-container flex justify-center items-center"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <div className="coming-soon-content"    style={{ background: "linear-gradient(135deg, #0c79b8, #1c1f26)" }}>
-        <h1 >Coming Soon</h1>
-        <p>We're working hard to bring something amazing. Stay tuned!</p>
-        <div className="loader">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
-    </motion.div>
-    </main>
+
+
+      <div className="team-page-title">
+        <h1 className="team-heading">MANGERS</h1>
+      </div>
+      <div className="managers-container">
+        {Object.entries(groupedManagers).map(([module, managers], index) => (
+          <div key={index} className="module-section">
+            <div className="module-front">
+              <p className='member-team'>{module}</p>
+            </div>
+            <div className="moudle-back">
+              <ul className="managers-list">
+                {managers.map((manager, idx) => (
+                  <li key={idx} className="manager-item">
+                    {manager.name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <Footer />
     </>
   );

@@ -13,7 +13,7 @@ function Internfair(){
             and product management. It helps students gain industry exposure and  <br />
             prepares them for upcoming placements and internships <br /><br />
             </div>
-            <div><button className='btn flex'>Register Now ↗</button></div>
+            <div><button className='btn flex' onClick={() => window.open('https://unstop.com/p/intern-fair-your-gateway-to-internships-iit-guwahati-1331100', '_blank')}>Register Now ↗</button></div>
             </div>
             
       </div>

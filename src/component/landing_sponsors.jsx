@@ -50,7 +50,7 @@ const LandingSponsors = () => {
       </a>
   </div> */}
   <motion.div
-      className="coming-soon-container flex justify-center items-center"
+      className="coming-soon-container flex justify-center items-center mb-20"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

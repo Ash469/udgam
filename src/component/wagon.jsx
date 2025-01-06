@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './wagon.css';
 
-const Wagon = ({ imageUrl, title, subtitle, animationProps }) => {
+const Wagon = ({ imageUrl, title, designation,pastcompany ,animationProps }) => {
   return (
     <motion.div
       className="wagon-container"
@@ -14,14 +14,14 @@ const Wagon = ({ imageUrl, title, subtitle, animationProps }) => {
         <div className="horizontal-line line3"></div>
         {/* Image Section */}
         <div
-          className="wagon-image"
+          className="wagon-image bg-cover bg-center"
           style={{ backgroundImage: `url(${imageUrl})` }}
           aria-label={title}
         ></div>
 
         {/* Content Section */}
-        <div className="content">
-          <div className="content-text">
+        <div className="speaker-content">
+        
             <div className="svg-container2">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="100" viewBox="0 0 81 100" fill="none">
                 <g style={{ mixBlendMode: "soft-light" }}>
@@ -39,8 +39,9 @@ const Wagon = ({ imageUrl, title, subtitle, animationProps }) => {
                 </g>
               </svg>
             </div>
+            <div className="speaker-content-text">
             <h1>{title}</h1>
-            <p>{subtitle}</p>
+            <h2>{designation},{pastcompany}</h2>
           </div>
         </div>
       </div>

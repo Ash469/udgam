@@ -20,7 +20,7 @@ const NavBar = () => {
           <a href="events" className="nav_link">Events</a>
           <a href="schedule" className="nav_link">Schedule</a>
           <a href="sponsors" className="nav_link">Sponsors</a>
-          <a href="speakers" className="nav_link">Speakers</a>
+          {/* <a href="speakers" className="nav_link">Speakers</a> */}
           <a href="team" className="nav_link">Our Team</a>
           <a href="pass" className="nav_button">Buy Tickets</a>
         </div>
@@ -34,7 +34,7 @@ const NavBar = () => {
           <a href="events" className="mobile_link">Events</a>
           <a href="schedule" className="mobile_link">Schedule</a>
           <a href="sponsors" className="mobile_link">Sponsors</a>
-          <a href="speakers" className="mobile_link">Speakers</a>
+          {/* <a href="speakers" className="mobile_link">Speakers</a> */}
           <a href="team" className="mobile_link">Our Team</a>
           <a href="pass" className="mobile_button">Buy Tickets</a>
         </div>

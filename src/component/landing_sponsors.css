@@ -41,17 +41,17 @@
   }
   /* Root Container */
 
-  
+
   
   /* Content Styling */
   .coming-soon-content {
     padding: 20px;
     max-width: 600px;
-    border: 2px solid #f4f5f6;
+    border: 10px solid #225088;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    color: #000;
+   color: white;
   }
   
   .coming-soon-content h1 {

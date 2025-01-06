@@ -27,21 +27,23 @@ function Start() {
   }, [])
 
   return (
-    <div className='videoContainer' style={{ position: 'relative', backgroundColor: 'rgba(0, 0, 0, 0.5)'}}>
+    <div className='videoContainer' style={{ position: 'relative', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
       <video
         ref={videoRef}
         playbackRate={0.5}
         muted
         className="background-video"
+        preload="auto"
+        loading="lazy" // Lazy load the video
       >
         <source src={backgroundVideo} type="video/webm" />
       </video>
-      
+
       <div className="logo-container">
-        <img 
-          src={Logo} 
-          alt="Logo" 
-          className={`logo ${isVisible ? 'visible' : ''}`} 
+        <img
+          src={Logo}
+          alt="Logo"
+          className={`logo ${isVisible ? 'visible' : ''}`}
         />
       </div>
     </div>

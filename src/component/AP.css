@@ -5,12 +5,16 @@
     font-size: 53.6px;
     color:#F3F490;
     text-shadow: gray;
+    font-family: "TT Firs Neue Trl";
 }
 .details9{
     position: absolute;
     transform: translateX(700px)translateY(-430px);
     color: white;
     text-align: left;
+    font-family: "PP Mori";
+    font-weight: 600;
+    font-size: 20px;
 }
 .btn9{
     position: absolute;

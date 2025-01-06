@@ -5,9 +5,13 @@
     z-index: 100;
 }
 .quote{
-    padding: 30px;
-    font-size: 22px;
-    font-weight: 300;
+    color: #4E4E4E;
+    text-align: center;
+    font-family: "PP Mori";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 @media(max-width:560px){

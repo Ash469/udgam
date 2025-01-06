@@ -37,7 +37,7 @@ const WhatIsUdgam = () => {
                 <p className="udgam-description">
                     UDGAM is the flagship event of the E-Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among the youth of the North-East, and India in general thus earning itself the reputation of being the largest E-Summit in the north-east. UDGAM acts as an exclusive platform for entrepreneurs, startup enthusiasts, and product managers to meet, discuss, explore, share, debate, and have fun, while celebrating the idea of entrepreneurship and innovation.
                 </p>
-                <h1 className="heading">What is Udgam?</h1>
+                <h1 className="heading mt-4">What is Udgam?</h1>
             </div>
         </div>
     );

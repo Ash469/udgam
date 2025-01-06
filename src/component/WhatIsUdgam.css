@@ -23,10 +23,7 @@
 
 /* Info container styles */
 .info-container {
-    background-color: white;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -62,7 +59,7 @@
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
-    margin: 0 0 1rem;
+    /* margin: 0 0 1rem; */
 }
 
 /* Responsive styles for heading */

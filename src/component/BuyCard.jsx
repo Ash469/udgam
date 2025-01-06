@@ -7,7 +7,7 @@ function BuyCard() {
         <div className='BuyCard '>
             <div className="ticket">
                 <div className="ticket-content">
-                    <div className="ticket-header">
+                    <div className="ticket-header m-6">
                         <h3>Udgam Pass</h3>
                         <div className='Logo'><svg width="85" height="19" viewBox="0 0 85 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.98443 0.0260212V16.1639C7.98443 16.4721 7.73561 16.7209 7.42738 16.7209C7.11914 16.7209 6.87032 16.4721 6.87032 16.1639V0.0260212H0V16.3663C0 17.5973 0.997126 18.5945 2.22821 18.5945H14.8548V0.0260212H7.98443Z" fill="#222222" />

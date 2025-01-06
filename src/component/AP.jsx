@@ -1,7 +1,7 @@
 import './AP.css'
 import photo10 from '../assets/ap.png'
 
-function Internfair(){
+function AP(){
     return(
         <div className='IF'>
             <img src={photo10} alt="" />
@@ -20,4 +20,4 @@ function Internfair(){
       </div>
     )
 }
-export default Internfair;
+export default AP;

@@ -1,13 +1,17 @@
 .BuyCard {
     display: flex;
     justify-content: center;
-    align-items: center; /* Keeps the content centered vertically */
-    margin: -5% 5% 10% 5%; /* Adjusted negative top margin to pull up */
-    padding: 0 10%; /* Simplified padding values */
-    font-size: 1.5rem; /* Adjust this value if text needs to be larger/smaller */
+    align-items: center;
+    /* Keeps the content centered vertically */
+    margin: -2% 5% 10% 5%;
+    /* Adjusted negative top margin to pull up */
+    padding: 0 10%;
+    /* Simplified padding values */
+    font-size: 1.5rem;
+    /* Adjust this value if text needs to be larger/smaller */
 }
 
-    
+
 
 
 .BuyCard .ticket {
@@ -23,8 +27,10 @@
     width: 100%;
     height: 380px;
     text-align: center;
-    background: url('../assets/Subtract.png') no-repeat center center; /* Background image for the ticket */
-    background-size:contain; /* Ensure the image covers the entire div */
+    background: url('../assets/Subtract.png') no-repeat center center;
+    /* Background image for the ticket */
+    background-size: contain;
+    /* Ensure the image covers the entire div */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,7 +39,8 @@
 
 .ticket-content {
     position: relative;
-    z-index: 3; /* Ensure content is above the background */
+    z-index: 3;
+    /* Ensure content is above the background */
 }
 
 .ticket-header {
@@ -50,10 +57,18 @@
     position: relative;
     left: 40%;
 }
-.ticket-header h3{
+
+.ticket-header h3 {
     position: relative;
     right: 15%;
     font-size: 1.3rem;
+    color: #000;
+    font-family: "TT Firs Neue Trl";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 .ticket-details {
@@ -62,15 +77,16 @@
     margin: 20px 0;
 }
 
-.ticket-details .price{
+.ticket-details .price {
     text-align: center;
     position: relative;
-    right: 15%;
+    right: 10%;
 }
+
 .ticket-details .date {
     text-align: center;
     position: relative;
-    left: 15%;
+    left: 10%;
 }
 
 .ticket-details span {
@@ -83,6 +99,7 @@
     color: #0C79B8;
     margin: 5px 0;
 }
+
 .ticket-details .date h2 {
     font-size: 2rem;
     color: black;
@@ -115,17 +132,21 @@
     border-radius: 8px;
     transform: translateY(-100%);
     transition: transform 0.4s ease;
-    pointer-events: none; /* Prevent interference with button clicks */
+    pointer-events: none;
+    /* Prevent interference with button clicks */
 }
 
 .buy-btn:hover::before {
-    transform: translateY(0); /* Slide the glazing effect into view */
+    transform: translateY(0);
+    /* Slide the glazing effect into view */
 }
 
 .buy-btn:hover {
     background-color: #011E2E;
-    color: white; /* Update text color to contrast with hover background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for emphasis */
+    color: white;
+    /* Update text color to contrast with hover background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow for emphasis */
 }
 
 
@@ -133,10 +154,13 @@
     text-align: left;
     width: 100%;
     height: 100%;
+    font-family: "PP Mori";
+    font-weight: 400;
+
 }
 
 .BuyCard .card2 span {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .BuyCard .card3 {
@@ -148,6 +172,13 @@
     padding: 0% 2%;
     margin: 0% 6%;
     text-align: start;
+    color: #000;
+    font-family: "PP Mori";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    /* 32.4px */
 }
 
 .perks li {
@@ -159,17 +190,21 @@
     .BuyCard {
         display: block;
     }
+
     .BuyCard .ticket-container img {
         width: 100%;
         justify-content: center;
     }
+
     .BuyCard .card3 {
         display: block;
         font-size: 0.95rem;
     }
+
     .BuyCard .card2 span {
         font-size: 0.8rem;
     }
+
     .ticket-header {
         display: flex;
         justify-content: space-between;
@@ -179,51 +214,55 @@
         bottom: 0%;
         font-size: 0.2rem;
     }
-    
+
     .ticket-header svg {
         position: relative;
         left: 10%;
         padding-left: 10%;
     }
-    .ticket-header h3{
+
+    .ticket-header h3 {
         position: relative;
         right: 10%;
         font-size: 0.9rem;
     }
-    
+
     .ticket-details {
         display: flex;
         justify-content: space-around;
         margin: 2px 0;
     }
-    
-    .ticket-details .price{
+
+    .ticket-details .price {
         text-align: center;
         position: relative;
         right: 15%;
     }
+
     .ticket-details .date {
         text-align: center;
         position: relative;
         left: 15%;
     }
-    
+
     .ticket-details span {
         font-size: 10px;
         color: #555;
     }
-    
+
     .ticket-details .price h2 {
         font-size: 1rem;
         color: #0C79B8;
         margin: 5px 0;
     }
+
     .ticket-details .date h2 {
         font-size: 1rem;
         color: black;
         margin: 5px 0;
     }
-    .buy-btn{
+
+    .buy-btn {
         font-size: 1rem;
         position: relative;
         top: 3%;
@@ -234,23 +273,28 @@
     .BuyCard {
         display: block;
     }
+
     .BuyCard .ticket img {
         width: 100%;
         justify-content: center;
     }
+
     .BuyCard .card3 {
         display: block;
         padding: 2%;
         margin: 2%;
     }
-    .BuyCard .card3 li{
+
+    .BuyCard .card3 li {
         padding: 10px 0px;
         font-size: 1.3rem;
     }
+
     .BuyCard .card2 span {
         font-size: 1rem;
     }
-    .ticket{
+
+    .ticket {
         margin-bottom: 10%;
     }
 }

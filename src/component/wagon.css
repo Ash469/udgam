@@ -55,14 +55,14 @@
 .speaker-content-text {
   color: var(--Udgam-Black, #f9f3f3);
   text-align: center; /* Center text */
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Mori";
   font-style: normal;
   z-index: 2;
 }
 
 .speaker-content-text h1 {
   color: var(--Udgam-White, #F4F5F6);
-  font-family: "PP Mori", sans-serif;
+  font-family: "PP Mori";
   font-size: 22.25px;
   font-weight: 600;
   line-height: 82%; /* 18.245px */

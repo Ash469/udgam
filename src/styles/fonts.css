@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "TT Firs Neue Trl";
+    src: url('../assets/fonts/tt 2/TT Firs Neue Trial Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: "PP Mori";
+    src: url('../assets/fonts/pp-mori-free-for-personal-use-v10/PP Mori - Free for Personal Use v1.0/PPMori-Regular.otf') format('otf');
+  }
+  

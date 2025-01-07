@@ -4,14 +4,19 @@
     transform: translateX(700px)translateY(-540px);
     font-weight: bolder;
     font-size: 53.6px;
-    color:white;
+    color: #B6E5DD;
     text-shadow: gray;
 }
 .details8{
     position: absolute;
     transform: translateX(700px)translateY(-430px);
-    color: white;
+    color: #B6E5DD;
     text-align: left;
+    font-family: "PP Mori", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 .btn8{
     position: absolute;

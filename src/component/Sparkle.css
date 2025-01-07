@@ -10,8 +10,13 @@
 .details7{
     position: absolute;
     transform: translateX(700px)translateY(-430px);
-    color: white;
+    color:#F6D6B1;
     text-align: left;
+    font-family: "PP Mori", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 .btn7{
     position: absolute;
@@ -71,8 +76,8 @@
 }
 @media(max-width:425px){   
     .title7{
-        transform: translateX(205px)translateY(-160px);
-        font-size: 13.6px;
+        transform:translateX(206px) translateY(-160px);
+        font-size: 18px;
     }
     .details7{
         transform: translateX(205px)translateY(-131px);

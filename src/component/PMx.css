@@ -16,8 +16,13 @@
 .details4{
     position: absolute;
     transform: translateX(700px)translateY(-510px);
-    color: white;
+    color: #FFED7A;
     text-align: left;
+    font-family: "PP Mori", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 .btn4{
     position: absolute;
@@ -94,7 +99,7 @@
 }
 @media(max-width:425px){   
     .PM{
-        height: 236px;
+        height: 208px;
     }
     .title4{
         transform: translateX(205px)translateY(-185px);

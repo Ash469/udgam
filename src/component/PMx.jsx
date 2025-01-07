@@ -12,7 +12,7 @@ function PMx(){
             analysis and innovation. Experience the product cycle and create<br />
             impactful solutions customers will love.<br />
             </div>
-            <div><button className='btn4 flex' onClick={() => window.open('https://unstop.com/competitions/pmx-2025-the-product-management-expedition-udgam-2025-iit-guwahati-1205613', '_blank')}>Register Now ↗</button></div>
+            <div><button className='event-registraion btn4 flex'>Registration Closed</button></div>
         </div>
     )
 }

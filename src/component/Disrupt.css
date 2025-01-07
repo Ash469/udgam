@@ -11,12 +11,18 @@
     font-size: 53.6px;
     color: #5878D2;
     text-shadow: gray;
+
 }
 .details3{
     position: absolute;
     transform: translateX(700px)translateY(-440px);
     color: #5878D2;
     text-align: left;
+    font-family: "PP Mori", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 .btn3{
     position: absolute;
@@ -93,7 +99,7 @@
 }
 @media(max-width:425px){   
     .disrupt{
-        height: 206.5px;
+        height: 181.5px;
     }
     .title3{
         transform: translateX(205px)translateY(-160px);

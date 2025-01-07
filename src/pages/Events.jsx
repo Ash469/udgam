@@ -12,7 +12,6 @@ import DFrame from "../component/DFrame";
 import NavBar from "./nav_bar";
 import Footer from "./footer";
 import '../styles/fonts.css';
-// import Footer from "../component/Footer";
 
 import "./Events.css";
 import { Events } from "react-scroll";

@@ -23,12 +23,6 @@ const Footer = () => {
 
             {/* Bottom Sections: Contact, Address, Email, Social Links */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                {/* Contact Us */}
-                <div className="footer-section">
-                    <h1 className="text-xl font-semibold mb-2">Contact Us</h1>
-                    <p>Suraj Kumar</p>
-                    <p>Design Head</p>
-                </div>
                 {/* Address */}
                 <div className="footer-section">
                     <h1 className="text-xl font-semibold mb-2">Address</h1>

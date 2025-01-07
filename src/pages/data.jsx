@@ -1,15 +1,15 @@
 export const TeamData = [
-  {name: 'Ambuj Mishra', team: 'Team Member', mobile: '+91-9773971295', email: 'm.ambuj@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/ambuj5o5/'},
-  {name: 'Aniket Gupta', team: 'Team Member', mobile: '+91-9928928565', email: 'g.aniket@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/guptaaniket512/'},
+  {name: 'Ambuj Mishra', team: 'Finance Head', mobile: '+91-9773971295', email: 'm.ambuj@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/ambuj5o5/'},
+  {name: 'Aniket Gupta', team: 'Udgam Convenor', mobile: '+91-9928928565', email: 'g.aniket@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/guptaaniket512/'},
   {name: 'Ayush Mishra', team: 'Team Member', mobile: '+91-9511495434', email: 'ayush.mishra@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/urayush-mishra/'},
-  {name: 'Bhargavi Divyam', team: 'Team Member', mobile: '+91-7635044169', email: 'd.bhargavi@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhargavi-divyam/'},
-  {name: 'Bhuvanaa S', team: 'Team Member', mobile: '+91-9744208599', email: 's.bhuvanaa@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhuvanaa-s-ab0199294/'},
-  {name: 'ELIKA', team: 'Team Member', mobile: '+91-7903053492', email: 'e.elika@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/elika-944a27261/'},
-  {name: 'Krishnam Gupta', team: 'Team Member', mobile: '+91-8081615702', email: 'g.krishnam@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/krishnamgupta1917/'},
-  {name: 'Nishtha Khatri', team: 'Team Member', mobile: '+91-8619372217', email: 'k.nishtha@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/nishtha-khatri-583924260/'},
-  {name: 'Rahul Kumar', team: 'Team Member', mobile: '+91-9394837975', email: 'rahul.mech22@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/rahul-kumar-183495256/'},
-  {name: 'Suraj Kumar', team: 'Team Member', mobile: '+91-7978169449', email: 'suraj.kmr@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/suraj-kumar-5b27261a9/'},
-  {name: 'Vedangi Jawade', team: 'Team Member', mobile: '+91-9769001420', email: 'v.jawade@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/vedangijawade/'}
+  {name: 'Bhargavi Divyam', team: 'InternFair Head', mobile: '+91-7635044169', email: 'd.bhargavi@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhargavi-divyam/'},
+  {name: 'Bhuvanaa S', team: 'Design Head', mobile: '+91-9744208599', email: 's.bhuvanaa@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhuvanaa-s-ab0199294/'},
+  {name: 'ELIKA', team: 'Events Head', mobile: '+91-7903053492', email: 'e.elika@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/elika-944a27261/'},
+  {name: 'Krishnam Gupta', team: 'Marketing Head', mobile: '+91-8081615702', email: 'g.krishnam@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/krishnamgupta1917/'},
+  {name: 'Nishtha Khatri', team: 'LS & Workshops Head', mobile: '+91-8619372217', email: 'k.nishtha@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/nishtha-khatri-583924260/'},
+  {name: 'Rahul Kumar', team: 'StartupExpo Head', mobile: '+91-9394837975', email: 'rahul.mech22@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/rahul-kumar-183495256/'},
+  {name: 'Suraj Kumar', team: 'Design Head', mobile: '+91-7978169449', email: 'suraj.kmr@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/suraj-kumar-5b27261a9/'},
+  {name: 'Vedangi Jawade', team: 'Disrupt Head', mobile: '+91-9769001420', email: 'v.jawade@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/vedangijawade/'}
 ];
 
 

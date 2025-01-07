@@ -1,5 +1,5 @@
 import React from "react";
-import image from '../assets/merch2.png';
+import image from '../assets/merch.png';
 
 const TShirtAdvert = () => {
   return (

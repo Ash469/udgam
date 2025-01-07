@@ -18,6 +18,11 @@
     transform: translateX(700px)translateY(-430px);
     color: white;
     text-align: left;
+    font-family: "PP Mori", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 .btn5{
     position: absolute;
@@ -76,7 +81,7 @@
 }
 @media(max-width:425px){   
     .CC{
-        height: 206.5px;
+        height: 181.5px;
     }
     .title5{
         transform: translateX(205px)translateY(-160px);

@@ -13,7 +13,7 @@ function Internfair(){
             creating feasible, user friendly products that address market <br />
             needs. <br />
             </div>
-            <div><button className='btn6 flex' onClick={() => window.open('https://unstop.com/hackathons/encode-2025-code-to-innovate-udgam-2025-iit-guwahati-1289240', '_blank')}>Register Now ↗</button></div>
+            <div><button className='event-registraion btn6 flex' onClick={() => window.open('https://unstop.com/hackathons/encode-2025-code-to-innovate-udgam-2025-iit-guwahati-1289240', '_blank')}>Register Now ↗</button></div>
             </div>
             
       </div>

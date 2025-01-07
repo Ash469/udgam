@@ -11,7 +11,7 @@ function Disrupt(){
             Finalist receive mentorship ,tools , prizes with winner securing <br />
             investments to scale their ventures<br />
             </div>
-            <div><button className='btn3 flex'>Register Now ↗</button></div>
+            <div><button className='event-registraion btn3 flex'>Register Now ↗</button></div>
         </div>
     )
 }

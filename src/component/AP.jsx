@@ -14,7 +14,7 @@ function AP(){
             exercitationem dolor nam consectetur minus facere <br />
             nihil.
             </div>
-            <div><button className='btn9 flex'>Register Now ↗</button></div>
+            <div><button className='event-registraion btn9 flex'>Registration Closed</button></div>
             </div>
             
       </div>

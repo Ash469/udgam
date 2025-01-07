@@ -12,7 +12,7 @@ function CC(){
             with a creative edge. Tackle complex and develop innovative <br />
             solutions that bridge technology and human needs.<br />
             </div>
-            <div><button className='event-registraion btn5 flex'>Register Now ↗</button></div>
+            <div><button className='event-registraion btn5 flex'>Coming Soon</button></div>
             </div>
             
       </div>

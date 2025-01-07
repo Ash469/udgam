@@ -14,7 +14,7 @@ function Internfair(){
             fostering the entrepreneurial spirit from a young age <br />
             
             </div>
-            <div><button className='event-registraion btn7 flex'>Register Now ↗</button></div>
+            <div><button className='event-registraion btn7 flex'>Registration Closed</button></div>
             </div>
             
       </div>

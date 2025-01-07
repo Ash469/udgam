@@ -14,7 +14,7 @@ function Startup() {
                 fosters entrepreneuurship by promoting collaboration , idea  <br />
                 exchange and reserach opportunities in vibrant ecosystem. <br /><br />
             </div>
-            <div><button className='event-registraion btn2 flex'>Register Now ↗</button></div>
+            <div><button className='event-registraion btn2 flex'>Registration Closed</button></div>
         </>
     )
 }

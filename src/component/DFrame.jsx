@@ -13,7 +13,7 @@ function Internfair(){
             designers to create user-centric solutions that solve <br />
             real-world problems while showcasing their innovation. <br />
             </div>
-            <div><button className='event-registraion btn8 flex'>Register Now ↗</button></div>
+            <div><button className='event-registraion btn8 flex'>Registration Closed</button></div>
             </div>
             
       </div>

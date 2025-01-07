@@ -51,7 +51,7 @@ export const Mangers = [
   {name: 'Saumya', team: 'Design'},
   {name: 'Sandeep G', team: 'Disrupt'},
   {name: 'Saurabh Solanki', team: 'InternFair'},
-  {name: 'Sauramya', team: 'Pr Branding'},
+  {name: 'Suramya', team: 'Pr Branding'},
   {name: 'Shaina', team: 'Pr Branding'},
   {name: 'Shanvi', team: 'Design'},
   {name: 'Shraddhan Singhai', team: 'InA'},

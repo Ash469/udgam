@@ -1,9 +1,9 @@
 export const TeamData = [
   {name: 'Ambuj Mishra', team: 'Team Member', mobile: '+91-9773971295', email: 'm.ambuj@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/ambuj5o5/'},
   {name: 'Aniket Gupta', team: 'Team Member', mobile: '+91-9928928565', email: 'g.aniket@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/guptaaniket512/'},
-  {name: 'Ayush Mishra', team: 'Team Member', mobile: '+91-9511495434', email: 'ayush.mishra@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/ayush-mishra/'},
-  {name: 'Bhargavi Divyam', team: 'Team Member', mobile: '+91-7635044169', email: 'd.bhargavi@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhargavi-divyam-18/'},
-  {name: 'Bhuvanaa S', team: 'Team Member', mobile: '+91-9744208599', email: 's.bhuvanaa@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhuvanaa-s/'},
+  {name: 'Ayush Mishra', team: 'Team Member', mobile: '+91-9511495434', email: 'ayush.mishra@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/urayush-mishra/'},
+  {name: 'Bhargavi Divyam', team: 'Team Member', mobile: '+91-7635044169', email: 'd.bhargavi@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhargavi-divyam/'},
+  {name: 'Bhuvanaa S', team: 'Team Member', mobile: '+91-9744208599', email: 's.bhuvanaa@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhuvanaa-s-ab0199294/'},
   {name: 'ELIKA', team: 'Team Member', mobile: '+91-7903053492', email: 'e.elika@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/elika-944a27261/'},
   {name: 'Krishnam Gupta', team: 'Team Member', mobile: '+91-8081615702', email: 'g.krishnam@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/krishnamgupta1917/'},
   {name: 'Nishtha Khatri', team: 'Team Member', mobile: '+91-8619372217', email: 'k.nishtha@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/nishtha-khatri-583924260/'},

@@ -4,6 +4,7 @@ import { TeamData, Mangers } from './data';
 import { FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import NavBar from './nav_bar';
 import Footer from './footer';
+import ECellLogo from "../assets/ecell.svg"; 
 
 import ambuj from '../assets/ambuj.png';
 import ayush from '../assets/ayush.png';
@@ -83,7 +84,7 @@ const TeamCards = () => {
 
 
       <div className="team-page-title">
-        <h1 className="team-heading">MANGERS</h1>
+        <h1 className="team-heading">MANAGERS</h1>
       </div>
       <div className="managers-container">
         {Object.entries(groupedManagers).map(([module, managers], index) => (

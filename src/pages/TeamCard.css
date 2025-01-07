@@ -251,8 +251,8 @@
 }
 
 .module-front {
-    background-color: rgba(0, 0, 0, 0.4); /* Made background slightly lighter */
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.718); /* Made background slightly lighter */
+
 }
   
 .module-back {

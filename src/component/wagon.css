@@ -55,14 +55,13 @@
 .speaker-content-text {
   color: var(--Udgam-Black, #f9f3f3);
   text-align: center; /* Center text */
-  font-family: "PP Mori";
+  font-family: "PP Mori",sans-serif;
   font-style: normal;
   z-index: 2;
 }
 
 .speaker-content-text h1 {
   color: var(--Udgam-White, #F4F5F6);
-  font-family: "PP Mori";
   font-size: 22.25px;
   font-weight: 600;
   line-height: 82%; /* 18.245px */
@@ -70,15 +69,7 @@
   margin: 0; /* Remove default margin */
 }
 
-.speaker-content-text p {
-  color: var(--Udgam-White, #F4F5F6);
-  font-family: "PP Mori", sans-serif;
-  font-size: 14.833px;
-  font-weight: 400;
-  line-height: 140%; /* 20.767px */
-  letter-spacing: -0.297px;
-  margin: 0; /* Remove default margin */
-}
+
 
 
 /* Fixed SVG positioning */

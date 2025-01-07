@@ -41,7 +41,7 @@ const Wagon = ({ imageUrl, title, designation,pastcompany ,animationProps }) => 
             </div>
             <div className="speaker-content-text">
             <h1>{title}</h1>
-            <h2>{designation},{pastcompany}</h2>
+            <h2>{designation},  {pastcompany}</h2>
           </div>
         </div>
       </div>

@@ -28,7 +28,6 @@ const Footer = () => {
                     <h1 className="text-xl font-semibold mb-2">Contact Us</h1>
                     <p>Suraj Kumar</p>
                     <p>Design Head</p>
-                    <p>+91 829901712</p>
                 </div>
                 {/* Address */}
                 <div className="footer-section">

@@ -101,25 +101,25 @@
 /* Styling for text on the cards */
 .member-name {
     margin: 0;
-    font-size: 1.6rem;
-    font-weight: 900; /* Changed to bold for a bolder look */
+    font-size: 1.4rem;
+    font-weight: 800; /* Changed to bold for a bolder look */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Made text shadow lighter */
     letter-spacing: 1px;
-    color: #149fd1;
+    font-family: "TT Firs Neue Trl";
     text-transform: uppercase;
 }
   
 .member-team{
     margin: 10px 0;
     font-size: 1.1rem;
+    font-family: "PP Mori";
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Made text shadow lighter */
-    opacity: 0.95;
-    font-weight: 600;
-    color: #f0f0f0;
+    opacity: 0.99;
+    font-weight: 700;
     letter-spacing: 0.5px;
     padding: 5px 10px;
     border-radius: 4px;
-    background: rgba(0, 172, 237, 0.3); /* Increased background opacity for brightness */
+    background: rgba(0, 172, 237, 0.5); /* Increased background opacity for brightness */
     backdrop-filter: blur(5px);
 }
 
@@ -288,4 +288,22 @@
 .module-section:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increased shadow on hover for brightness */
+}
+
+.Modules{
+    font-size: 1.3rem;
+    font-family: "TT Firs Neue Trl";
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Made text shadow lighter */
+    opacity: 0.99;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(0, 172, 237, 0.5); /* Increased background opacity for brightness */
+    backdrop-filter: blur(5px);
+}
+.manager-item{
+    font-family: "PP Mori",sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
 }

@@ -97,20 +97,20 @@
         font-size: 8px;
     }
 }
-@media(max-width:425px){   
+@media(max-width:430px){   
     .PM{
         height: 208px;
     }
     .title4{
-        transform: translateX(205px)translateY(-185px);
+        transform: translateX(205px)translateY(-165px);
         font-size: 13.6px;
     }
     .details4{
-        transform: translateX(205px)translateY(-155px);
+        transform: translateX(205px)translateY(-135px);
         font-size: 4px;
     }
     .btn4{
-        transform: translateX(205px)translateY(-92px);
+        transform: translateX(205px)translateY(-85px);
         font-size: 5px;
         padding: 2px 4px;
     }

@@ -50,9 +50,11 @@ body{
   
   .pointer.active::before {
     background-color:aliceblue; 
-    border: 7px solid black;
+    border: 5px solid black;
     position: absolute;
-    left: -12px;
+    left: -9px;
+    width: 25px;
+    height: 25px;
 
   }
   
@@ -61,6 +63,14 @@ body{
     font-size: 20px;
     font-weight: 500;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-container {
+      left: -25px; 
+    }
+
+    
   }
   @media(max-width:600px){
     .timeline-container {
@@ -81,7 +91,7 @@ body{
     .pointer.active::before {
       border: 5px solid black;
       position: absolute;
-      left: -10px;
+      left: -9px;
   
     }
 

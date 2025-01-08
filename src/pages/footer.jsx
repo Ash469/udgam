@@ -39,16 +39,16 @@ const Footer = () => {
                 <div className="footer-section">
                     <h1 className="text-xl font-semibold mb-2">Follow Us</h1>
                     <div className="social-icons flex gap-4">
-                        <a href="#" className="icon">
+                        <a href="https://www.instagram.com/ecell_iitg/" className="icon">
                             <img src={Instagram} alt="Instagram" className="w-8 h-8 glow-on-hover" />
                         </a>
-                        <a href="#" className="icon">
+                        <a href="https://www.facebook.com/ecell.iitg/" className="icon">
                             <img src={Facebook} alt="Facebook" className="w-8 h-8 glow-on-hover" />
                         </a>
-                        <a href="#" className="icon">
+                        <a href="https://x.com/ecelliitg" className="icon">
                             <img src={Twitter} alt="Twitter" className="w-8 h-8 glow-on-hover" />
                         </a>
-                        <a href="#" className="icon">
+                        <a href="https://www.linkedin.com/company/ecell-iitg/" className="icon">
                             <img src={LinkedIn} alt="LinkedIn" className="w-8 h-8 glow-on-hover" />
                         </a>
                     </div>

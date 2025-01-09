@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-// import Home from "./pages/Home2";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+// import Home from "./pages/Home";
+import Home from "./pages/Home2";
 import TeamCards from "./pages/TeamCard";
 import Event from "./pages/Events";
 import Sponsors from "./pages/Sponsors";

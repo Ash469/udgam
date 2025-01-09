@@ -28,32 +28,32 @@
     width: 100%; /* Make the SVG responsive */
   }
   
-  /* Media Queries for Responsive Adjustments */
-  @media (max-width: 1440px) {
-    .svg-overlay {
-      top: calc(100vh);
-      height: calc(820vh);
-    }
-  }
-  
   @media (max-width: 1024px) {
     .svg-overlay {
-      top: calc(100vh); /* Adjust top for standard laptops */
-      height: calc(850vh); /* Adjust height proportionally */
+      top: calc(96vh); /* Adjust top for standard laptops */
+      height:calc(747vh); /* Adjust height proportionally */
     }
   }
   
   @media (max-width: 768px) {
     .svg-overlay {
-      top: calc(100vh);
-      height: calc(900vh);
+      top: calc(95vh);
+      height: calc(788vh);
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .svg-overlay {
-      top: calc(100vh); /* Adjust top for mobile devices */
-      height: calc(1350vh); /* Further increase height for very small devices */
+      top: calc(97.2vh); /* Adjusted value for 640px width */
+      height: calc(1037.8vh); /* Adjusted height */
     }
   }
+  
+  @media (max-width: 320px) {
+    .svg-overlay {
+      top: calc(105vh); /* Adjusted for smaller devices */
+      height: calc(1700vh); /* Example extrapolation */
+    }
+  }
+  
   

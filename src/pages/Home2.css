@@ -1,102 +1,58 @@
-body {
-    background-color: #e4e4e4;
-    margin: 0;
-    padding: 0;
+.App {
+  position: relative;
+  /* z-index: 0; */
+}
+
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensures it is above the SVG background */
+  padding: 20px;
+}
+
+.red-dot {
+  position: absolute;
+  z-index: 1; /* Ensure it's visible over the background */
+}
+.svg-overlay {
+  position: absolute;
+  top: calc(105vh);
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  height: calc(535vh); /* Default height for large screens */
+  z-index: -1; /* Place SVG in the background */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+.responsive-svg {
+  width: 100%; /* Make the SVG responsive */
+}
+
+@media (max-width: 1024px) {
+  .svg-overlay {
+    top: calc(96vh); /* Adjust top for standard laptops */
+    height:calc(747vh); /* Adjust height proportionally */
   }
-  
-  .highlights-container {
-    position: fixed;
-    top: 50%; 
-    left: 90px; 
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .svg-overlay {
+    top: calc(95vh);
+    height: calc(788vh);
   }
-  
-  .highlights {
-    width: 8px;
-    height: 100vh;
-    background-color: white;
-    position: relative;
+}
+
+@media (max-width: 640px) {
+  .svg-overlay {
+    top: calc(97.2vh); /* Adjusted value for 640px width */
+    height: calc(1037.8vh); /* Adjusted height */
   }
-  
-  .label {
-    position: relative;
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+@media (max-width: 320px) {
+  .svg-overlay {
+    top: calc(105vh); /* Adjusted for smaller devices */
+    height: calc(1700vh); /* Example extrapolation */
   }
-  
-  .label:hover {
-    transform: scale(1.1);
-  }
-  
-  .label::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    border-radius: 50%;
-    transition: background-color 0.3s ease-in-out, border 0.3s;
-  }
-  
-  .label.active::before {
-    background-color: aliceblue;
-    border: 7px solid black;
-  }
-  
-  .label a {
-    margin-left: 20px;
-    color: #222;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .label.active a {
-    color: black;
-  }
-  
-  @media (max-width: 600px) {
-    .highlights-container {
-      left: 10px;
-      width: 50px;
-    }
-  
-    .label a {
-      font-size: 14px;
-    }
-  
-    .label::before {
-      width: 15px;
-      height: 15px;
-    }
-  
-    .label.active::before {
-      border: 5px solid black;
-    }
-  }
-  .label.break {
-    position: relative;
-    margin: 30px 0;
-    height: 50px; /* Adjust the height of the break */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .break-decorator {
-    font-size: 1.5rem;
-    color: #750f0f; /* Decorative element, e.g., 🚂 */
-  }
-  
-  .label.break::before {
-    content: '';
-    display: none; /* Hide the circle for the break */
-  }
-  
+}
+

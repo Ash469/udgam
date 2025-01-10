@@ -1,41 +1,48 @@
 import React, { useState } from 'react';
-import thumbnail from '../assets/thumbnail.png'; // Import the thumbnail image
-import video from '../assets/1.webm'; // Import the video file
-import './WhatIsUdgam.css'; // Import the CSS file
+import thumbnail from '../assets/thumbnail2.png';
+import video from '../assets/1.webm';
+import './WhatIsUdgam.css';
 
 const WhatIsUdgam = () => {
     const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false);
 
     const handleThumbnailClick = () => {
-        setIsVideoLoaded(true);
+        setIsTransitioning(true);
+        // Add a small delay before actually loading the video
+        setTimeout(() => {
+            setIsVideoLoaded(true);
+        }, 300); // Matches the transition duration
     };
 
     return (
         <div className="what-is-udgam-container">
             <div className="video-container">
-                {!isVideoLoaded ? (
-                    <div className="thumbnail-wrapper" onClick={handleThumbnailClick}>
-                        <img
-                            src={thumbnail}
-                            alt="Video Thumbnail"
-                            className="video-thumbnail"
-                        />
-                        <div className="play-button">
-                            ▶
-                        </div>
+                <div className={`thumbnail-wrapper ${isTransitioning ? 'fade-out' : ''}`} 
+                     onClick={handleThumbnailClick}
+                     style={{ display: isVideoLoaded ? 'none' : 'block' }}>
+                    <img
+                        src={thumbnail}
+                        alt="Video Thumbnail"
+                        className="video-thumbnail"
+                    />
+                    <div className="play-button">
+                        ▶
                     </div>
-                ) : (
+                </div>
+                <div className={`video-wrapper ${isVideoLoaded ? 'fade-in' : ''}`}
+                     style={{ display: !isVideoLoaded ? 'none' : 'block' }}>
                     <video
                         src={video}
                         controls
                         className="video"
-                        autoPlay
+                        autoPlay={isVideoLoaded}
                     />
-                )}
+                </div>
             </div>
             <div className="info-container">
                 <p className="udgam-description">
-                    UDGAM is the flagship event of the E-Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among the youth of the North-East, and India in general thus earning itself the reputation of being the largest E-Summit in the north-east. UDGAM acts as an exclusive platform for entrepreneurs, startup enthusiasts, and product managers to meet, discuss, explore, share, debate, and have fun, while celebrating the idea of entrepreneurship and innovation.
+                UDGAM is the flagship event of the E-Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among the youth of the North-East, and India in general thus earning itself the reputation of being the largest E-Summit in the north-east. UDGAM acts as an exclusive platform for entrepreneurs, startup enthusiasts, and product managers to meet, discuss, explore, share, debate, and have fun, while celebrating the idea of entrepreneurship and innovation.
                 </p>
             </div>
         </div>

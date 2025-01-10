@@ -21,7 +21,6 @@ import wagon2 from '../assets/speaker2.jpg';
 import wagon3 from '../assets/speaker3.jpg';
 import wagon4 from '../assets/speaker4.jpg';
 import wagon5 from '../assets/speaker5.jpg';
-import './Home.css';
 
 
 
@@ -50,7 +49,7 @@ function Home() {
       <Start />
       <TextBox title={"What is Udgam?"} style={{ paddingTop: '10px' }} />
       <WhatIsUdgam />
-      <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)' }} />
+      <TextBox title={"Events Stations"} style={{ transform: 'rotate(180deg)',marginBottom:'2rem' }} />
       <LandingEvents />
       <TextBox title={"Merch Stations"} />
       <TShirtAdvert />

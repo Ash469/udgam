@@ -28,7 +28,7 @@ function BuyCard() {
                         </div>
                     </div>
                 </div>
-                <button className="buy-btn">Buy Pass</button>
+                <button className="buy-btn" onClick={() => window.open('https://unstop.com/p/udgam-2025-registration-pass-udgam-2025-iit-guwahati-1355595', '_blank')}>Buy Pass</button>
             </div>
             <div className='card2'>
                 <span>What you get:</span><br /><br />

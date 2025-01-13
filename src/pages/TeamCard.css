@@ -75,12 +75,12 @@
 }
   
 .card-front {
-    background-color: rgba(0, 0, 0, 0.4); /* Made background slightly lighter */
+    background-color: rgba(0, 0, 0, 0.26); /* Made background slightly lighter */
     backdrop-filter: blur(2px);
 }
   
 .card-back {
-    background-color: rgba(0, 0, 0, 0.6); /* Made background slightly lighter */
+    background-color: rgba(55, 64, 85, 0.399); /* Made background slightly lighter */
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -249,21 +249,20 @@
     text-align: center;
     background-blend-mode: overlay;
 }
-
 .module-front {
-    background-color: rgba(0, 0, 0, 0.718); /* Made background slightly lighter */
-
+    background-color: rgba(55, 64, 85, 0.399); /* Made background slightly lighter */
+    backdrop-filter: blur(2px);
 }
-  
+
 .module-back {
-    background-color: rgba(0, 0, 0, 0.6); /* Made background slightly lighter */
+    background-color: rgba(55, 64, 85, 0.399); /* Made background slightly lighter */
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     backdrop-filter: blur(4px);
 }
-  
+
 /* Card hover effect */
 .module-section:hover .module-front {
     transform: rotateY(180deg);
@@ -306,4 +305,27 @@
     font-family: "PP Mori",sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+
+.contributors-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+ }
+
+ .managers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.card-front {
+    background-color: rgba(57, 66, 86, 0.399); /* Made background slightly lighter */
+    backdrop-filter: blur(2px);
 }

@@ -23,7 +23,7 @@
 
 /* Info container styles */
 .info-container {
-    padding: 1.5rem;
+    padding: 1.2rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -39,39 +39,14 @@
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: 0.32px;
-    text-transform: capitalize;
     margin: 0;
 }
-
-/* Responsive styles for paragraph */
+/* Responsive container styles */
 @media (min-width: 768px) {
     .udgam-description {
         font-size: 18px;
-        line-height: 1.5;
+        line-height: 1.2;
     }
-}
-
-/* Heading styles */
-.heading {
-    color: #222;
-    font-family: 'PP Mori', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: center;
-    /* margin: 0 0 1rem; */
-}
-
-/* Responsive styles for heading */
-@media (min-width: 768px) {
-    .heading {
-        font-size: 2rem;
-        text-align: left;
-    }
-}
-
-/* Responsive container styles */
-@media (min-width: 768px) {
     .what-is-udgam-container {
         flex-direction: row;
         gap: 2rem;
@@ -94,11 +69,7 @@
     }
 
     .udgam-description {
-        font-size: 18px;
-    }
-
-    .heading {
-        font-size: 2rem;
+        font-size: 20px;
     }
 }
 

@@ -32,6 +32,9 @@ const WhatIsUdgam = () => {
                 </div>
                 <div className={`video-wrapper ${isVideoLoaded ? 'fade-in' : ''}`}
                      style={{ display: !isVideoLoaded ? 'none' : 'block' }}>
+                          <div className="play-button">
+                        ▶
+                    </div>
                     <video
                         src={video}
                         controls
@@ -42,7 +45,7 @@ const WhatIsUdgam = () => {
             </div>
             <div className="info-container">
                 <p className="udgam-description">
-                UDGAM is the flagship event of the E-Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among the youth of the North-East, and India in general thus earning itself the reputation of being the largest E-Summit in the north-east. UDGAM acts as an exclusive platform for entrepreneurs, startup enthusiasts, and product managers to meet, discuss, explore, share, debate, and have fun, while celebrating the idea of entrepreneurship and innovation.
+                UDGAM is the flagship event of the E-Cell, IIT Guwahati. It was conceptualized to develop and spread the spirit of entrepreneurship among the youth of the North-East and India in general, thus earning itself the reputation of being the largest E-Summit in the North-East. UDGAM acts as an exclusive platform for entrepreneurs, startup enthusiasts, and product managers to meet, discuss, explore, share, debate, and have fun while celebrating the idea of entrepreneurship and innovation.
                 </p>
             </div>
         </div>

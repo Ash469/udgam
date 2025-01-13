@@ -73,3 +73,28 @@ export const Mangers = [
   {name: 'Veermal Luke John', team: 'InternFair'},
   {name: 'Yeshaswi', team: 'Design'}
 ];
+
+export const WebsiteContributors = [
+  {
+    name: 'Ayush Shandilya',
+    // role: 'Frontend Developer',
+    mobile: '9801589162',
+    email: 'ayush.r@iitg.ac.in',
+    // linkdn: 'https://linkedin.com/in/kartik',
+  },
+  {
+    name: 'Gautam Kumar',
+    // role: 'Backend Developer',
+    mobile: '8271986416',
+    email: 'gautam@example.com',
+    // linkdn: 'https://linkedin.com/in/john',
+  },
+  {
+    name: 'Rohith Sai Anvesh',
+    // role: 'Backend Developer',
+    mobile: '9059432618',
+    email: 'Rohith@example.com',
+    // linkdn: 'https://linkedin.com/in/john',
+  },
+];
+

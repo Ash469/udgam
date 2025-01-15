@@ -27,7 +27,8 @@
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "reactstrap": "^9.2.3",
-    "three": "^0.171.0"
+    "three": "^0.171.0",
+    "vakchat": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

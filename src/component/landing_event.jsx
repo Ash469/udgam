@@ -30,20 +30,20 @@ const LandingEvents = () => {
                     key={index}
                     className={`event-card flex flex-col md:flex-row gap-4 m-4 rounded-lg shadow-lg`}
                 >
-                    {/* Image Section */}
-                    <div className="image-container w-full md:w-1/3 relative rounded-lg overflow-hidden">
-                        <img
-                            src={event.imageUrl}
-                            alt={event.name}
-                            className="w-full h-64 md:h-full object-cover rounded-lg shadow-lg"
-                        />
-                        <button className="register-btn absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white py-2 px-4 rounded-lg opacity-0 transition-opacity duration-300"
-                        onClick={() => window.open('https://unstop.com/p/intern-fair-your-gateway-to-internships-iit-guwahati-1331100', '_blank')}>
-                            Register Now
-                        </button>
-                    </div>
+                                        <div className="image-container w-full md:w-1/3 relative rounded-lg overflow-hidden">
+                                            <img
+                                                src={event.imageUrl}
+                                                alt={event.name}
+                                                className="w-full h-64 md:h-full object-cover rounded-lg shadow-lg"
+                                            />
+                                            <button 
+                                                className="register-btn absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white py-2 px-4 rounded-lg opacity-0 transition-opacity duration-300"
+                                            >
+                                         Registration Closed
+                                            </button>
+                                        </div>
 
-                    {/* Text Section with dynamic background color */}
+                                        {/* Text Section with dynamic background color */}
                     <div className={`landing-event-text-container w-full md:w-2/3 flex flex-col justify-center p-4 ${index === 0 ? 'bg-teal-800' : index === 1 ? 'bg-yellow-400' : 'bg-blue-600'}`}>
                         <div className="event-description-text text-white">
                             <h1 className="text-xl md:text-2xl font-semibold">{event.name}</h1>

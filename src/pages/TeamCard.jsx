@@ -17,6 +17,7 @@ import rahul from '../assets/rahul.png';
 import suraj from '../assets/suraj.png';
 import vedangi from '../assets/vedangi.png';
 import aniket from '../assets/aniket.png';
+import mrinal from '../assets/mrinal.jpg';
 
 const getImageByName = (name) => {
   const nameToImage = {
@@ -26,6 +27,7 @@ const getImageByName = (name) => {
     'Bhuvanaa S': bhuvanaa,
     'ELIKA': elika,
     'Krishnam Gupta': krishnam,
+    'Mrinal Agarwal': mrinal,
     'Nishtha Khatri': nishtha,
     'Rahul Kumar': rahul,
     'Suraj Kumar': suraj,

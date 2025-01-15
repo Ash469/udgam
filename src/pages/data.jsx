@@ -1,7 +1,7 @@
 export const TeamData = [
   {name: 'Ambuj Mishra', team: 'Finance Head', mobile: '+91-9773971295', email: 'm.ambuj@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/ambuj5o5/'},
   {name: 'Aniket Gupta', team: 'Udgam Convenor', mobile: '+91-9928928565', email: 'g.aniket@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/guptaaniket512/'},
-  {name: 'Ayush Mishra', team: 'Team Member', mobile: '+91-9511495434', email: 'ayush.mishra@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/urayush-mishra/'},
+  {name: 'Ayush Mishra', team: 'PR & Branding Head', mobile: '+91-9511495434', email: 'ayush.mishra@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/urayush-mishra/'},
   {name: 'Bhargavi Divyam', team: 'InternFair Head', mobile: '+91-7635044169', email: 'd.bhargavi@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhargavi-divyam/'},
   {name: 'Bhuvanaa S', team: 'Design Head', mobile: '+91-9744208599', email: 's.bhuvanaa@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/bhuvanaa-s-ab0199294/'},
   {name: 'ELIKA', team: 'Events Head', mobile: '+91-7903053492', email: 'e.elika@iitg.ac.in', linkdn: 'https://www.linkedin.com/in/elika-944a27261/'},

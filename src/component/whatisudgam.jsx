@@ -32,9 +32,7 @@ const WhatIsUdgam = () => {
                 </div>
                 <div className={`video-wrapper ${isVideoLoaded ? 'fade-in' : ''}`}
                      style={{ display: !isVideoLoaded ? 'none' : 'block' }}>
-                          <div className="play-button">
-                        ▶
-                    </div>
+                        
                     <video
                         src={video}
                         controls

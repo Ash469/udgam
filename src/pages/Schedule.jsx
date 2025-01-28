@@ -1,32 +1,62 @@
-import React from 'react';
+import { useState } from "react";
+import { events } from "./event";
+import EventCard from "./EventCard";
+import "./Schedule.css";
 import NavBar from "./nav_bar";
 import Footer from "./footer";
-import './Schedule.css'
-import { motion } from 'framer-motion';
 
-const Schedule = () => (
-    <div className="flex flex-col min-h-screen">
-        <NavBar />
-        <main className="flex-grow mt-20">
-       <motion.div
-             className="coming-soon-container flex justify-center items-center mb-20"
-             initial={{ opacity: 0, y: 50 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8 }}
-           >
-             <div className="coming-soon-content" style={{  background: '#222',  border: '10px solid #225088',borderRadius: '35.725px'}}>
-             <h1 className="color-white" style={{  color: ' #F4F5F6',fontFamily:'TT Firs Neue Trl' }}>Coming Soon</h1>
-             <p className="color-white" style={{  color: ' #F4F5F6',fontFamily:'PP Mori'  }}>We're working hard to bring something amazing. Stay tuned!</p>
-             <div className="loader">
-               <span></span>
-               <span></span>
-               <span></span>
-             </div>
-             </div>
-           </motion.div>
-        </main>
-        <Footer />
+export default function Schedule() {
+
+  const [filter, setFilter] = useState("");
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const sortedEvents = [...events].sort(
+    (a, b) => new Date(`${a.date}T${a.time}`).getTime() - new Date(`${b.date}T${b.time}`).getTime()
+  );
+
+  const filteredEvents = sortedEvents.filter(
+    (event) =>
+      event.name.toLowerCase().includes(filter.toLowerCase()) &&
+      (!selectedDate || event.date === selectedDate)
+  );
+
+  const uniqueDates = Array.from(new Set(events.map((event) => event.date))).sort();
+
+  return (
+    <div className="schedule-page">
+      <NavBar />
+    <div className="space-y-6 mb-4 pl-4 pr-4">
+      <div className="flex flex-col sm:flex-row gap-4 bg-white p-4 rounded-lg shadow-md">
+        <input
+          type="text"
+          placeholder="Search events..."
+          className="flex-grow p-3 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onChange={(e) => setFilter(e.target.value)}
+        />
+        <select
+          className="p-3 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onChange={(e) => setSelectedDate(e.target.value || null)}
+          value={selectedDate || ""}
+        >
+          <option value="" style={{
+            FontFamily: 'TT Firs Neue Trl',
+             fontSize: '1.2rem',
+             fontWeight: '500',
+          }}>All Dates</option>
+          {uniqueDates.map((date) => (
+            <option key={date} value={date}>
+              {new Date(date).toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric" })}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {filteredEvents.map((event) => (
+          <EventCard key={event.id} event={event} />
+        ))}
+      </div>
     </div>
-);
-
-export default Schedule;
+    <Footer />
+    </div>
+  );
+}

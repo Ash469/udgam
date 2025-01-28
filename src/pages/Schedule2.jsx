@@ -1,5 +1,5 @@
 import React from "react";
-import "./Schedule.css"; // Import CSS for styling
+import "./Schedule2.css"; // Import CSS for styling
 
 const events = [
     {

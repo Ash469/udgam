@@ -1,0 +1,80 @@
+/* Card Container */
+.event-card1 {
+    padding-bottom: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* Hover effect */
+  .event-card:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Header Section */
+  .event-header {
+    position: relative;
+    height: 7rem;
+    overflow: hidden;
+  }
+  
+  /* Engine and Time Container */
+  .engine-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    animation-play-state: paused; /* Initially paused */
+  }
+  
+  .event-card:hover .engine-container {
+    animation-play-state: running; /* Start animation on hover */
+  }
+  
+  .engine-container img {
+    width: 15rem;
+    height: auto;
+    position: relative;
+  }
+  
+  /* Time inside the engine window */
+  .time-container {
+    position: absolute;
+    top: 45%; /* Adjust to place time correctly in the engine window */
+    left: 65%; /* Fine-tune to fit inside the window */
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Animation */
+  @keyframes moveEngine {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .schedule-event-name{
+    font-family: "TT Firs Neue Trl";
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .schedule-event-date{
+    font-family: "PP Mori", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .schedule-event-venue{
+    font-family: "TT Firs Neue Trl", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }

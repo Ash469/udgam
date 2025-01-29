@@ -36,7 +36,7 @@ import emtImg from '../assets/sponsors/emt.png';
 import skillImg from '../assets/sponsors/skill.png';
 import zomatoImg from '../assets/sponsors/zomato.png';
 import ankurImg from '../assets/sponsors/ankur.png';
-import YhillsImg from '../assets/sponsors/Yhills.png';
+import YhillsImg from '../assets/sponsors/yhills.png';
 import unstopImg from '../assets/sponsors/unstop.png';
 import codeiumImg from '../assets/sponsors/code.png';
 import geksonImg from '../assets/sponsors/geksons.png';

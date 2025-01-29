@@ -151,7 +151,6 @@ const SponsorSection = ({ title, sponsors, className = "" }) => (
     className={`sponsor-section ${className}`}
     initial="initial"
     whileInView="animate"
-    viewport={{ once: true, amount: 0.1}}
   >
     {title && (
       <motion.h2 

@@ -43,7 +43,7 @@ import geksonImg from '../assets/sponsors/geksons.png';
 import farmleyImg from '../assets/sponsors/farmley.png';
 import campusImg from '../assets/sponsors/campusTimes.png';
 import startTalkyImg from '../assets/sponsors/startupTalky.png';
-import TechStoryImg from '../assets/sponsors/TechStory.png';
+import TechStoryImg from '../assets/sponsors/techStory.png';
 import youthImg from '../assets/sponsors/youth.png';
 import siliconImg from '../assets/sponsors/silicon.png';
 import startupNewsImg from '../assets/sponsors/startNews.png';

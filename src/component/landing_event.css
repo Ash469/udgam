@@ -53,7 +53,7 @@
 }
 
 .event-card:nth-child(1) .event-description-text h1 {
-    font-family: "TT Firs Neue Trl";
+    font-family: "PP Mori", sans-serif;
     font-size: 21.831px;
     font-style: normal;
     font-weight: 700;
@@ -78,7 +78,7 @@
 }
 
 .events-list .event-card:nth-child(2) .event-description-text h1 {
-    font-family: "TT Firs Neue Trl", sans-serif;
+    font-family: "PP Mori", sans-serif;
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 1.2;
@@ -102,7 +102,7 @@
 
 .events-list .event-card:nth-child(3) .event-description-text h1 {
     color: #0C0C0C;
-    font-family: "TT Firs Neue Trl", sans-serif;
+    font-family: "PP Mori", sans-serif;
     font-size: 1.25rem;
     font-weight: 800;
     line-height: 1.2;
@@ -148,7 +148,7 @@
 }
 
 .landing-event-text-container h1 {
-    font-family: "TT Firs Neue Trl";
+    font-family: "PP Mori";
     font-size: 21.831px;
     font-style: normal;
     font-weight: 700;

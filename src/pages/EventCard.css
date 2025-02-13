@@ -63,7 +63,7 @@
   }
   
   .schedule-event-name{
-    font-family: "TT Firs Neue Trl";
+    font-family: "PP Mori", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0.5rem 0;
@@ -74,7 +74,7 @@
     font-weight: 500;
   }
   .schedule-event-venue{
-    font-family: "TT Firs Neue Trl", sans-serif;
+    font-family: "PP Mori", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
   }

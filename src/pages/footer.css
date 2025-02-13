@@ -22,7 +22,7 @@
 
 .footer-section h1 {
   color: var(--Udgam-White, #F4F5F6);
-  font-family: "TT Firs Neue Trl";
+  font-family: "PP Mori", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -32,7 +32,7 @@
 
 .footer-section p {
   color: var(--Udgam-White, #F4F5F6);
-  font-family: "PP Mori";
+  font-family: "PP Mori", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

@@ -6,18 +6,18 @@ import NavBar from './nav_bar';
 import Footer from './footer';
 import ECellLogo from "../assets/ecell.svg";
 
-import ambuj from '../assets/ambuj.png';
-import ayush from '../assets/ayush.png';
-import bhargavi from '../assets/bhargavi.png';
-import bhuvanaa from '../assets/bhuvanaa.png';
-import elika from '../assets/elika.png';
-import krishnam from '../assets/krishnam.png';
-import nishtha from '../assets/nishtha.png';
-import rahul from '../assets/rahul.png';
-import suraj from '../assets/suraj.png';
-import vedangi from '../assets/vedangi.png';
-import aniket from '../assets/aniket.png';
-import mrinal from '../assets/mrinal.jpg';
+import ambuj from '../assets/team/ambuj.png';
+import ayush from '../assets/team/ayush.png';
+import bhargavi from '../assets/team/bhargavi.png';
+import bhuvanaa from '../assets/team/bhuvanaa.png';
+import elika from '../assets/team/elika.png';
+import krishnam from '../assets/team/krishnam.png';
+import nishtha from '../assets/team/nishtha.png';
+import rahul from '../assets/team/rahul.png';
+import suraj from '../assets/team/suraj.png';
+import vedangi from '../assets/team/vedangi.png';
+import aniket from '../assets/team/aniket.png';
+import mrinal from '../assets/team/mrinal.jpg';
 
 const getImageByName = (name) => {
   const nameToImage = {

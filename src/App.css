@@ -6,8 +6,8 @@
 body {
     overflow-x: hidden;
     overflow-y: auto; 
-    background-color: #ffffff; /* Light background for better visibility */
-    font-family: 'TT Firs Neue Trl';
+    background-color: #ffffff; 
+    font-family: 'PP Mori', sans-serif;
 }
 #container {
     height: 200px;

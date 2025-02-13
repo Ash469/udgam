@@ -3,20 +3,20 @@ import Wagon from './wagon'
 import './Speakers.css';
 
 // Images
-import wagon1 from '../assets/speaker1.svg';
-import wagon2 from '../assets/speaker2.svg';
+import wagon1 from '../assets/speakers/speaker1.svg';
+import wagon2 from '../assets/speakers/speaker2.svg';
 import engine from '../assets/engine.png';
 import engine2 from '../assets/engine2.png';
-import wagon3 from '../assets/speaker3.svg'; 
-import wagon4 from '../assets/speaker4.svg';
-import wagon5 from '../assets/speaker5.svg';
-import wagon6 from '../assets/speaker6.svg';
-import wagon7 from '../assets/speaker7.svg';
-import wagon8 from '../assets/speaker8.svg';
-import wagon9 from '../assets/speaker9.svg';
-import wagon10 from '../assets/speaker10.svg';
-import wagon11 from '../assets/speaker11.svg';
-import wagon12 from '../assets/speaker12.svg';
+import wagon3 from '../assets/speakers/speaker3.svg'; 
+import wagon4 from '../assets/speakers/speaker4.svg';
+import wagon5 from '../assets/speakers/speaker5.svg';
+import wagon6 from '../assets/speakers/speaker6.svg';
+import wagon7 from '../assets/speakers/speaker7.svg';
+import wagon8 from '../assets/speakers/speaker8.svg';
+import wagon9 from '../assets/speakers/speaker9.svg';
+import wagon10 from '../assets/speakers/speaker10.svg';
+import wagon11 from '../assets/speakers/speaker11.svg';
+import wagon12 from '../assets/speakers/speaker12.svg';
 
 function Speakers() {
   // Data for train components

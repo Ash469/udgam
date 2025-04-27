@@ -123,17 +123,17 @@ const TeamCards = () => {
     <h2 className="member-name" style={{
       fontSize: '1.3rem',
       fontFamily: 'TT Firs Neue Trl',
-      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)', /* Made text shadow lighter */
+      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)', 
       opacity: 0.99,
       fontWeight: 700,
       letterSpacing: '0.5px',
       padding: '5px 10px',
       borderRadius: '4px',
-      background: 'rgba(0, 172, 237, 0.5)', /* Increased background opacity for brightness */
+      background: 'rgba(0, 172, 237, 0.5)', 
       backdropFilter: 'blur(5px)'
     }}>{contributor.name}</h2>
             </div>
-            <div className="card-back">
+            {/* <div className="card-back">
               <div className="links-container">
                 <a href={`tel:${contributor.mobile}`} target="_blank" rel="noopener noreferrer">
                   <FaPhone className="social-icon" />
@@ -145,7 +145,27 @@ const TeamCards = () => {
                   <FaGithub className="social-icon" />
                 </a>
               </div>
+            </div> */}
+
+<div className="card-back" style={{
+              backgroundImage: `url(${getImageByName(contributor.name)})`,
+              backgroundSize: 'contain',
+              backgroundPosition: 'center'
+            }}>
+    <h2 className="member-name" style={{
+      fontSize: '1.3rem',
+      fontFamily: 'TT Firs Neue Trl',
+      textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)', 
+      opacity: 0.99,
+      fontWeight: 700,
+      letterSpacing: '0.5px',
+      padding: '5px 10px',
+      borderRadius: '4px',
+      background: 'rgba(0, 172, 237, 0.5)', 
+      backdropFilter: 'blur(5px)'
+    }}>{contributor.name}</h2>
             </div>
+            
           </div>
         ))}
       </div>
